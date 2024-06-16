@@ -501,6 +501,12 @@ footer h4{
         margin-top: 25px;
     }
 
+    footer p{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
 }
 
 
