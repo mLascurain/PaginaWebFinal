@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.22);
+}
+
+
+header{
+    background-color: #101010;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo{
+    width: 200px;
+}
+
+.nav{
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+
+.nav-list li{
+    list-style: none;
+   
+}
+
+.nav-list li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.nav-list li i{
+    margin-right: 7px;
+    color: white;
+}
+
+.nav-link{
+    position: relative;
+    transition: 0.7s;
+}
+
+.nav-link:hover{
+    color: yellow;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(255, 251, 0, 0.76);
+    
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.principal{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    border-bottom:solid rgba(0, 0, 0, 0.52) 2px;
+}
+
+.principal div{
+    margin: 10px;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding:20px;
+    text-align: start;
+    width: 80%;
+    
+}
+.informacion h1{
+    
+    margin-bottom: 20px;  
+    font-size: 1.8rem;  
+}
+
+.informacion p{
+    color: rgba(0, 0, 0, 0.8);
+    font-size:20px;
+}
+
+.ver-mas{
+    display: none;
+}
+
+.links-disponible{
+    display: flex;
+}
+
+button{
+    width: 150px;
+    border:0;
+    border-radius: 8px;
+    display: flex;
+    font-size: 18px;
+    background-color: transparent;
+    padding: 4px;
+    padding-left: 0;
+    cursor: pointer;
+    transition: .3s;
+    margin: 2px;
+    
+}
+#netflix{
+    color: red;
+}
+#crunchyroll{
+    color: orange;
+}
+
+button span{
+    width: 100%;
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .1s;
+}
+button:active {
+    transform: scale(0.8)
+}
+
+
+.imagen-principal{
+    font-size: smaller;
+    text-align:center;
+    color: rgba(0, 0, 0, 0.52);
+}
+
+.principal img{
+    margin: 30px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.secundario{
+    
+    margin-top: 40px;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+.temporada-2{
+   
+    box-shadow: 0 0 40px -10px #202020;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    height: 450px;
+    text-align: start;
+    margin-top: 100px;
+}
+
+.temporada-2 img{
+    
+    width: 40%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px ;
+}
+
+#img-2{
+    
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px ;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.info-temp{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-temp p{
+    
+    width: 70%;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.info-temp h2{
+   
+    width: 70%;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.info-temp h3{
+    width: 70%;
+    margin-top: 10px;
+}
+
+.ver-episodios{
+    display: none;
+}
+.episodios {
+   margin-top: 20px;
+   display: flex;
+   gap: 35px;
+   width: 70%;
+}
+.episodios a{
+    color: black;
+}
+.episodios p{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+.episodios img{
+    margin-top: 5px;
+    border-radius: 10px;
+    width: 250px
+}
+.episodios i#top-1{
+    color: gold;
+}
+.episodios i#top-2{
+    color: lightgrey;
+}
+.episodios i#top-3{
+    color:rgba(179, 131, 0, 0.815);
+}
+.episodios i#star{
+    color: gold;
+    font-size: 13px;
+}
+footer{
+    display: flex;
+    margin-top: 150px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 25px;
+    color: white;
+    background-color: #101010;
+}
+
+footer div{
+    width: 50%;
+    padding-left: 40px;
+    padding-top: 25px;
+}
+footer i{
+    color: rgba(255, 251, 0, 0.76);
+    font-size: 20px;
+}
+footer p{
+    margin-top: 20px;
+
+}
+footer h4{
+    font-size: 20px;
+}
+
+.footer-list{
+    margin-top:20px;
+}
+.footer-list li{
+    margin-top: 10px ;
+    list-style: none;
+}
+
+.footer-list li a{
+    color: white;
+} 
+
+@media(max-width:480px){
+    header{
+        position: sticky;
+	    top: 0;
+	    z-index: 1;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .burger.activate .bar:nth-child(2){
+        opacity: 0;
+    }
+    .burger.activate .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .burger.activate .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-list{
+        z-index: 1;
+        position:fixed;
+        right: -600px;
+        top: 100px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #101010;
+        width: 100%;
+        align-items: start;
+        transition: 0.45s;
+        padding: 20px;
+
+    }
+    .nav-list li{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        justify-content: start;
+        height: 45px;
+        width: 100%;
+        margin: 5px 0;
+        border-bottom: solid yellow 1px;
+        
+    }
+    .nav-list.activate{
+        right: 0px;
+    }
+    .nav-list li i{
+       margin-right: 10px;
+       color: white;
+        
+    }
+    
+    .principal{
+        flex-direction: column-reverse;
+    }
+
+    .principal img{
+        margin: 0;
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+
+    .informacion p{
+        width: 120%;
+        background-color: white;
+        padding: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .informacion p#text-1{
+        border-radius: 10px;
+        padding: 20px;
+
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .show{
+        display:block;
+    }
+
+    .ver-mas{
+        display: block;
+        width: 100%;
+        background-color: #101010;
+        margin-top: 20px;
+        padding: 10px;
+        color: white;
+
+
+    }
+    .informacion p#text-disponible{
+        margin-top: 20px;
+        padding-top: 0px;
+        border-top-left-radius:10px ;
+        border-top-right-radius:10px ;
+        text-align: center;
+    }
+    .links-disponible{
+        padding-top: 0;
+        background-color: white;
+        display: flex;
+        width: 120%;
+        justify-content: space-around;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding-bottom: 8px;
+    }
+    .temporada-2{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin-top:20px;
+    }
+    .temporada-2 img#img-season{
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .info-temp{
+        padding: 20px;
+    }
+
+    .info-temp h2{
+        width: 100%;
+        font-size: 25px;
+    }
+    .info-temp p{
+        width: 100%;
+        font-size: 20px;
+    }
+    .info-temp h3{
+        display: none;
+    }
+    .episodios{
+        display: none;
+    }
+    .show-episodios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ver-episodios{
+        display: flex;
+        outline: solid;
+        justify-content: center;
+        width: 100%;
+        background-color: #101010;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+    }
+    .ver-episodios:active{
+        transform: scale(0.9)
+    }
+
+    .episodios-show{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        outline: sol;
+    }
+
+    .secundario div#JJK0{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .secundario div#JJK0 img{
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius:0 ;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer div{
+        margin-top: 25px;
+    }
+
+}
+
+
+
+
