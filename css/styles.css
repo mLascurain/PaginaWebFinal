@@ -124,6 +124,11 @@ section{
     display: flex;
 }
 
+.informacion p#text-disponible{
+    margin-top: 20px;
+}
+
+
 button{
     width: 150px;
     border:0;
@@ -401,15 +406,16 @@ footer h4{
 
     }
     .informacion p#text-disponible{
+        display: flex;
+        justify-content: center;
         margin-top: 20px;
-        padding-top: 0px;
-        border-top-left-radius:10px ;
-        border-top-right-radius:10px ;
+        border-radius: 10px;
         text-align: center;
+        background-color:white;
     }
     .links-disponible{
         padding-top: 0;
-        background-color: white;
+        background-color: transparent;
         display: flex;
         width: 120%;
         justify-content: space-around;
